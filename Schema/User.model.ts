@@ -6,6 +6,10 @@ export const userSchema = new Schema(
       type: String,
       required: true,
     },
+    phone: {
+      type: Number,
+      required: true,
+    },
     email: {
       type: String,
       required: true,
@@ -18,12 +22,6 @@ export const userSchema = new Schema(
     role: {
       type: String,
       required: true,
-    },
-    societyName: {
-      type: [String],
-    },
-    societyId: {
-      type: [Schema.Types.ObjectId],
     },
   },
   {

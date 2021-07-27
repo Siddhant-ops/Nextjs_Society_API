@@ -11,19 +11,12 @@ const societySchema = new mongoose_1.Schema({
         type: String,
         required: true,
     },
-    users: [User_model_1.userSchema],
-    email: {
-        type: String,
-        required: true,
-        unique: true,
-        trim: true,
-    },
-    password: {
-        type: String,
+    users: {
+        type: [User_model_1.userSchema],
         required: true,
     },
     referral: {
-        type: String,
+        type: Number,
         required: true,
     },
 }, {

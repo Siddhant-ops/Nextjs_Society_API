@@ -7,6 +7,10 @@ exports.userSchema = new mongoose_1.Schema({
         type: String,
         required: true,
     },
+    phone: {
+        type: Number,
+        required: true,
+    },
     email: {
         type: String,
         required: true,
@@ -19,12 +23,6 @@ exports.userSchema = new mongoose_1.Schema({
     role: {
         type: String,
         required: true,
-    },
-    societyName: {
-        type: [String],
-    },
-    societyId: {
-        type: [mongoose_1.Schema.Types.ObjectId],
     },
 }, {
     timestamps: true,

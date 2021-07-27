@@ -11,19 +11,12 @@ const societySchema = new Schema(
       type: String,
       required: true,
     },
-    users: [userSchema],
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-      trim: true,
-    },
-    password: {
-      type: String,
+    users: {
+      type: [userSchema],
       required: true,
     },
     referral: {
-      type: String,
+      type: Number,
       required: true,
     },
   },
